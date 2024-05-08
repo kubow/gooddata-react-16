@@ -11,8 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@gooddata/api-client-tiger": "^9.9.1",
+    "@gooddata/sdk-backend-tiger": "^9.9.1",
+    "@gooddata/sdk-ui-all": "^9.9.1",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react-dom": "^16.14.0",
+    "react-markdown": "^8.0.7"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.24.1",
