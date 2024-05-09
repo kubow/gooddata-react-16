@@ -1,6 +1,7 @@
 import * as React from 'react';
+
 //import GDDataIntegration from './LoadWebComponents';
-//import GDDataIntegration from './LoadReactComponents';
+import GDDataIntegration from './LoadReactComponents';
 
 export default function App() {
     const [alternate, setAlternate] = React.useState(false);
@@ -14,15 +15,18 @@ export default function App() {
     return <div>
         <h1>GoodData Data Integration Example</h1>
         <button onClick={() => setAlternate(!alternate)}>Toggle Workspace</button>
-        {/* load dependency
-        <GDDataIntegration /> */ }
         
-        {/* // React components loaded
-        
-        */}
+        {/* // React components load */
+        <GDDataIntegration 
+            workspace={workspaceId} 
+            dashboard={dashboardId} 
+            visual={visualizationId} 
+        />
+        /* */}
 
         
-        {/* // Web components loaded
+        {/* // Web components load
+        <GDDataIntegration />
         <gd-insight
             style={{width: '100%', height: 400}}
             insight={visualizationId}
