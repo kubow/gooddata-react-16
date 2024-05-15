@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { clearInsightViewCaches } from "@gooddata/sdk-ui-ext";
 
 //import GDDataIntegration from './LoadWebComponents';
 import GDDataIntegration from './LoadReactComponents';
@@ -10,7 +11,8 @@ export default function App() {
     const visualizationId = !alternate ? VISUALIZATION : VISUALIZATION_2;
     const dashboardId = !alternate ? DASHBOARD : DASHBOARD_2;
 
-    console.log(`Serving workspace id: ${workspaceId}\n Dashboard: ${dashboardId}\n Visual: ${visualizationId}`);
+    console.log(`Connected on : ${HOST}\n default workspace: ${WORKSPACE}`);
+    clearInsightViewCaches(); // https://www.gooddata.com/docs/gooddata-ui/latest/learn/visualize_data/insightview/#InsightView-Caching
 
     return <div>
         <h1>GoodData Data Integration Example</h1>

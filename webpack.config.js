@@ -13,10 +13,14 @@ module.exports = {
                 exclude: /node_modules/,
                 use: ['babel-loader'],
             },
+            {
+                test: /\.css$/,
+                use: ['css-loader'],
+            },
         ],
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx'],
+        extensions: ['.*', '.js', '.jsx'],
     },
     output: {
         path: path.resolve(__dirname, './docs'),
