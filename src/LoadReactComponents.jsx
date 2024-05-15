@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import "@gooddata/sdk-ui-ext/styles/css/main.css";
 import { InsightView } from "@gooddata/sdk-ui-ext";
-import { Dashboard } from "@gooddata/sdk-ui-dashboard";
+//import { Dashboard } from "@gooddata/sdk-ui-dashboard";
 import { BackendProvider, WorkspaceProvider } from '@gooddata/sdk-ui';
 import tigerFactory, { ContextDeferredAuthProvider, redirectToTigerAuthentication } from "@gooddata/sdk-backend-tiger";
 
@@ -18,8 +18,8 @@ export default function GDDataIntegration({ workspace, dashboard, visual}) {
                     <InsightView insight={visual}/>
                 </div>
                 
-                <p>And here goes some dashboard...</p>
-                <Dashboard dashboard={idRef(dashboard)}/>
+               {/*  <p>And here goes some dashboard...</p>
+                <Dashboard dashboard={idRef(dashboard)}/> */}
             </WorkspaceProvider>
         </BackendProvider>
     );
