@@ -35,7 +35,15 @@ dynamically loading content from different workspaces
 ```js
 // not working in React 16
 //import { Dashboard } from "@gooddata/sdk-ui-dashboard";
+// solve in package json: override/resolution
+
 // alternative
 // import { BackendProvider, InsightView, idRef, WorkspaceProvider } from "@gooddata/sdk-ui-all";
+
+,
+  "overrides": {
+    "react-markdown": "^9.0.1"
+  }
+
 ```
 
