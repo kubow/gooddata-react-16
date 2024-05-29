@@ -21,6 +21,9 @@ module.exports = {
     },
     resolve: {
         extensions: ['.*', '.js', '.jsx'],
+        alias: {
+            "react/jsx-runtime": path.join(__dirname, "node_modules/react/jsx-runtime"),
+        },
     },
     output: {
         path: path.resolve(__dirname, './docs'),
